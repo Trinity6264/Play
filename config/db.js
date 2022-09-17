@@ -16,6 +16,7 @@ const db = async () => {
       }
     }
   );
+  mongoose.disconnect();
 };
 
 module.exports = { db };
