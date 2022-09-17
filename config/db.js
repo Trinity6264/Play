@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
 
+// awGcFY7lmA0RPCaY
+// autumshipmentalics
 const db = () => {
   mongoose.connect(
-    "mongodb+srv://autum:autum6264@todo.kz0h79h.mongodb.net/",
+    "mongodb+srv://autumshipmentalics:awGcFY7lmA0RPCaY@cluster0.260w81r.mongodb.net/",
     {
       useNewUrlParser: true,
     },
