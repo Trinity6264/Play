@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const db = () => {
   mongoose.connect(
-    "mongodb://localhost:27017/todo",
+    "mongodb+srv://autum:autum6264@todo.kz0h79h.mongodb.net/",
     {
       useNewUrlParser: true,
     },
