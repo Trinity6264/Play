@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 
 // awGcFY7lmA0RPCaY
 // autumshipmentalics
-const db = () => {
-  mongoose.connect(
+const db = async () => {
+  await mongoose.connect(
     "mongodb+srv://autumshipmentalics:awGcFY7lmA0RPCaY@cluster0.260w81r.mongodb.net/",
     {
       useNewUrlParser: true,
@@ -18,4 +18,4 @@ const db = () => {
   );
 };
 
-module.exports = db;
+module.exports = { db };
