@@ -2,22 +2,23 @@
   "name": "play",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "api.js",
   "scripts": {
+    "play": "node ./src/api.js",
     "start": "netlify-lambda serve src",
     "build": "netlify-lambda build src"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jericrealubit/express-netlify1.git"
+    "url": "git+https://github.com/Trinity6264/Play.git"
   },
   "keywords": [],
   "author": "Amoah Alexander",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jericrealubit/express-netlify1/issues"
+    "url": "https://github.com/Trinity6264/Play.git/issues"
   },
-  "homepage": "https://github.com/jericrealubit/express-netlify1#readme",
+  "homepage": "https://github.com/Trinity6264/Play.git#readme",
   "dependencies": {
     "express": "^4.18.1",
     "mongoose": "^6.6.1",
