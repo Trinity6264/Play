@@ -7,6 +7,7 @@ const db = async () => {
     "mongodb+srv://autumshipmentalics:awGcFY7lmA0RPCaY@cluster0.260w81r.mongodb.net/",
     {
       useNewUrlParser: true,
+      serverSelectionTimeoutMS: 9000
     },
     (err) => {
       if (!err) {
