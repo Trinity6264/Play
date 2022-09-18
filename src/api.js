@@ -5,26 +5,13 @@ const todoRouter = require("../routes/todo_route");
 const app = express();
 const port = 5000;
 const router = express.Router()
+const { addTodo, getTodo } = require("../controller/todo_controller");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-router.get('/',(req,res)=>{
-  res.json([
-    {
-      name:"alex",
-      age:40
-    }
-  ])
-})
-router.post('/',(req,res)=>{
-  res.json([
-    {
-      name:"alex",
-      age:40
-    }
-  ])
-})
+router.get('/',getTodo)
+router.post('/',addTodo)
 
 try {
   db().then((e) => {
