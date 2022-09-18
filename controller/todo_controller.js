@@ -41,5 +41,19 @@ const getTodo = async (req, res) => {
     });
   }
 };
+const play = async (req, res) => {
+  try {
+    res.json({
+      name: "Amem",
+      age: 50,
+    });
+  } catch (error) {
+    res.status(400).json({
+      msg: error.message,
+      status: false,
+      data: {},
+    });
+  }
+};
 
-module.exports = { addTodo, getTodo };
+module.exports = { addTodo, getTodo, play };
